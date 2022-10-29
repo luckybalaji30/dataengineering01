@@ -21,3 +21,9 @@ values (300, 'Pranva'),
 insert into employee
 values (500, 'Vivek'),
 (600, 'Subarna');
+
+-- COMMAND ----------
+
+insert into employee
+values ( 700, 'Dhana'),
+(800, 'Renuka')
