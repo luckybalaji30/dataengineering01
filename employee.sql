@@ -3,7 +3,8 @@ create database if not exists company;
 
 -- COMMAND ----------
 
-create if not exist employee (emp_id int, emp_name varchar(20))
+create
+or replace table employee (emp_id int, emp_name varchar(20));
 insert into
   employee
 values
@@ -12,18 +13,43 @@ values
 
 -- COMMAND ----------
 
-insert into employee 
-values (300, 'Pranva'),
-(400, 'Ilakiyaa')
+insert into
+  employee
+values
+  (300, 'Pranva'),
+  (400, 'Ilakiyaa')
 
 -- COMMAND ----------
 
-insert into employee
-values (500, 'Vivek'),
-(600, 'Subarna');
+insert into
+  employee
+values
+  (500, 'Vivek'),
+  (600, 'Subarna');
 
 -- COMMAND ----------
 
-insert into employee
-values ( 700, 'Dhana'),
-(800, 'Renuka')
+insert into
+  employee
+values
+  (700, 'Dhana'),
+  (800, 'Renuka')
+
+-- COMMAND ----------
+
+select
+  *
+from
+  employee
+
+-- COMMAND ----------
+
+desc history employee
+
+-- COMMAND ----------
+
+desc company
+
+-- COMMAND ----------
+
+
